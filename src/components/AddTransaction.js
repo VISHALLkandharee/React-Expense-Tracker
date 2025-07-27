@@ -107,7 +107,7 @@ const AddTransaction = ({addTransaction , setToggle}) => {
         />
       </RadioContainer>
 
-      <AddTransBtn onClick={addTransactionData}>Add Transaction</AddTransBtn>
+      <AddTransBtn className="btn btn-primary" onClick={addTransactionData}>Add Transaction</AddTransBtn>
     </Container>
   );
 };

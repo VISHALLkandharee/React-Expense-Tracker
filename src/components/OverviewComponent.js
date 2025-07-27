@@ -13,9 +13,9 @@ const OverviewComponent = ({ toggle, setToggle, income, expense }) => {
 
   return (
     <Balance>
-      <span className="p-3 fw-bold text-success"> Balance : {bal}</span>
-      <button className="btn btn-primary" onClick={()=>{setToggle(!toggle)}}>
-      {(toggle) ? "Cancel" : "Add"}
+      <span className={`p-3 fw-bold ${bal >= 0 ? "text-success" : "text-danger"}`}> Balance : {bal}</span>
+      <button className="btn btn-primary" onClick={() => setToggle(!toggle)}>
+        {toggle ? "Cancel" : "Add"}
       </button>
     </Balance>
   );
